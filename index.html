@@ -500,7 +500,120 @@ images. Right: The video shows the result of running interpolation over latent s
 
            
           </table>
- 
+         <br>
+        <hr>
+
+        <center><h1> Quantitative Results</h1></center> <br>
+
+        <table align=center width=900px>
+            <tr>
+                <td>
+
+                    <span style="font-size:18px">
+                        <!--<b>Chest X-ray Lung Segmentation</b> Numbers are DICE scores. 
+                        <a href='http://db.jsrt.or.jp/eng.php'>JSRT</a> is the in-domain dataset, 
+                        on which we both train and evaluate. We also evaluate on additional out-of-domain datasets 
+                        (<a href='https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4256233/'>NLM</a>, 
+                        <a href='https://arxiv.org/abs/1803.01199'>NIH</a>, 
+                        <a href='https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4256233/'>SZ</a>). 
+                        Ours as well as the other semi-supervised methods use additional 108k unlabeled data samples.-->
+                    </span>
+
+                </td>
+                
+            </tr>
+
+            <tr>
+                <td width=100px>
+                    <center>
+                        <a href="./Table1.png"><img src = "./Table1.png" width="1000px"></img></a><br>
+                    </center>
+                </td>
+                
+        </table>
+        <br>
+        <hr>
+        <br>
+        <table align=center width=900px>
+            <tr>
+                <td>
+
+                    <span style="font-size:18px">
+                        <!--<b>Skin Lesion Segmentation</b> Numbers are JC index. <a href='https://challenge.isic-archive.com/'>ISIC</a>
+                        is the in-domain dataset, on which we both train and evaluate. We also evaluate on additional out-of-domain datasets 
+                        (<a href='https://pubmed.ncbi.nlm.nih.gov/24110966/'>PH2</a>, 
+                        <a href='https://uwaterloo.ca/vision-image-processing-lab/research-demos/skin-cancer-detection'>IS</a>, 
+                        <a href='https://uwaterloo.ca/vision-image-processing-lab/research-demos/skin-cancer-detection'>Quest</a>). 
+                        Ours as well as the other semi-supervised methods use additional 33k unlabeled data samples.-->
+                    </span>
+
+                </td>
+                
+            </tr>
+
+            <tr>
+                <td width=100px>
+                    <center>
+                        <a href="./Table2.png"><img src = "./Table2.png" width="1000px"></img></a><br>
+                    </center>
+                </td>
+                
+        </table>
+        <br>
+        <hr>
+        <br>
+        <table align=center width=900px>
+            <tr>
+                <td>
+
+                    <span style="font-size:18px">
+                        <b>CT-MRI Transfer Liver Segmentation</b> Numbers are DICE per patient. CT
+                        is the in-domain data set on which we both train and evaluate. We also evaluate on additional unseen 
+                        MRI T1-in and MRI T1-out from
+                        <a href='https://chaos.grand-challenge.org/'>CHAOS</a> dataset. 
+                        Ours as well as the semi-supervised methods use additional 70 CT volumes from the 
+                        <a href='https://competitions.codalab.org/competitions/17094'>LITS2017</a> testing set as unlabeled data samples for training.
+                    </span>
+
+                </td>
+                
+            </tr>
+
+            <tr>
+                <td width=100px>
+                    <center>
+                        <a href="./resources/ct-mri-results.png"><img src = "./resources/ct-mri-results.png" width="1000px"></img></a><br>
+                    </center>
+                </td>
+                
+        </table>
+        <br>
+        <hr>
+        <br>
+        <table align=center width=900px>
+            <tr>
+                <td>
+                    <span style="font-size:18px">
+                        <b>Face Part Segmentation</b> Numbers are mIoU. We train on CelebA and evaluate on CelebA (denoted as “In”)
+                        as well as the MetFaces dataset. Train labels denotes the number of annotated examples used during training. 
+                        Our model as well as the semi-supervised baselines additionally use 28k unlabeled CelebA data samples.
+                    </span>
+
+                </td>
+                
+            </tr>
+
+            <tr>
+                <td width=100px>
+                    <center>
+                        <a href="./resources/face-parts-results.png"><img src = "./resources/face-parts-results.png" width="600px"></img></a><br>
+                    </center>
+                </td>
+                
+        </table>
+        <br>
+        <br>
+        <hr>
 
 </body>
 </html>
