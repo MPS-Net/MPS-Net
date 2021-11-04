@@ -131,8 +131,7 @@
 	           <td>
                       <center>                      
                            <img src = "./Fig3.png" width="900px" height="410px"></img>
-                           <span style="font-size:15px;font-style:italic">   Overview of our motion pose and shape network (MPS-Net). MPS-Net estimates pose, shape, and camera parameters in the
-video sequence based on the static feature extractor, temporal encoder, temporal feature integration scheme, and SMPL parameter regressor to generate 3D human pose and shape.</span>
+                           <span style="font-size:15px;font-style:italic">    Overview of our motion pose and shape network (MPS-Net). MPS-Net estimates pose, shape, and camera parameters Θ in the video sequence based on the static feature extractor, temporal encoder, temporal feature integration, and SMPL parameter regressor to generate 3D human pose and shape.</span>
                     </center>
                    </td> 
 	        </tr>
@@ -143,7 +142,8 @@ video sequence based on the static feature extractor, temporal encoder, temporal
                     <td width=600px>
                         <br>
                         <p align="justify" style="font-size: 18px">
-                         Learning to capture human motion is essential to 3D human pose and shape estimation from monocular video. However, the existing methods mainly rely on recurrent or convolutional operation to model such temporal information, which limits the ability to capture non-local context relations of 3D human motion. To address this problem, we propose a motion pose and shape network (MPS-Net) to effectively capture humans in motion to generate accurate and temporally coherent 3D human pose and shape from a video. Specifically, we first propose a motion continuity attention (MoCA) module that leverages visual cues observed from human motion to adaptively recalibrate the range that needs attention in the sequence to better capture the motion continuity dependencies. We then propose a hierarchical attentive feature integration (HAFI) module to effectively combine adjacent past and future feature representations to strengthen temporal correlation and refine the feature representation of the current frame. By jointly considering MoCA and HAFI modules, the proposed MPS-Net excels in estimating 3D human pose and shape in the video. Though conceptually simple, our MPS-Net outperforms the state-of-the-art methods on the 3DPW, MPI-INF-3DHP and Human3.6M benchmark datasets, respectively.
+                         Learning to capture human motion is essential to 3D human pose and shape estimation from monocular video. However, the existing methods mainly rely on recurrent or convolutional operation to model such temporal information, which limits the ability to capture non-local context relations of human motion. To address this problem, we propose a motion pose and shape network (MPS-Net) to effectively capture humans in motion to estimate accurate and temporally coherent 3D human pose and shape from a video. Specifically, we first propose a motion continuity attention (MoCA) module that leverages visual cues observed from human motion to adaptively recalibrate the range that needs attention in the sequence to better capture the motion continuity dependencies. Then, we develop a hierarchical attentive feature integration (HAFI) module to effectively combine adjacent past and future feature representations to strengthen temporal correlation and refine the feature representation of the current frame. By jointly considering the MoCA and HAFI modules, the proposed MPS-Net excels in estimating 3D human pose and shape in the video. Though conceptually simple, our MPS-Net not only outperforms the state-of-the-art methods on the 3DPW, MPI-INF-3DHP, and Human3.6M benchmark datasets, but also uses fewer network parameters.
+
 			    </p> 
 		    </td>
 			
@@ -153,7 +153,7 @@ video sequence based on the static feature extractor, temporal encoder, temporal
                          <td width=600px>
                          	<img src = "./360.gif" width="450px" height="253px"></img>
                          	<img src = "./MPS_Net_DM3-choice_output.gif" width="450px" height="127px"></img><br>
-                                <span style="font-size:14px">   Left: The video showcases our MPS-Net under alternative viewpoints. Right: The video shows the visual results of the learned continuity of human motion.  </span>
+                                <span style="font-size:14px">   Left: The video shows the 3D human pose and shape estimation results of our MPS-Net under different viewpoints. Right: The video shows the visual results of the learned continuity of human motion.  </span>
                           	<br>
 			 </td>
                     </center>
