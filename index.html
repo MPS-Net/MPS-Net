@@ -114,12 +114,12 @@
 </style>
 
 <html>
-  <head>
+    <head>
         <title>MPS-Net</title>
-  </head>
+    </head>
 
-  <body>
-	  <br>
+    <body>
+    <br>
     	<center>
     		<span style="font-size:42px">Capturing Humans in Motion: Temporal-Attentive 3D Human Pose and Shape Estimation from Monocular Video</span>
     	</center>
@@ -147,36 +147,38 @@
                          Learning to capture human motion is essential to 3D human pose and shape estimation from monocular video. However, the existing methods mainly rely on recurrent or convolutional operation to model such temporal information, which limits the ability to capture non-local context relations of human motion. To address this problem, we propose a motion pose and shape network (MPS-Net) to effectively capture humans in motion to estimate accurate and temporally coherent 3D human pose and shape from a video. Specifically, we first propose a motion continuity attention (MoCA) module that leverages visual cues observed from human motion to adaptively recalibrate the range that needs attention in the sequence to better capture the motion continuity dependencies. Then, we develop a hierarchical attentive feature integration (HAFI) module to effectively combine adjacent past and future feature representations to strengthen temporal correlation and refine the feature representation of the current frame. By coupling the MoCA and HAFI modules, the proposed MPS-Net excels in estimating 3D human pose and shape in the video. Though conceptually simple, our MPS-Net not only outperforms the state-of-the-art methods on the 3DPW, MPI-INF-3DHP, and Human3.6M benchmark datasets, but also uses fewer network parameters.
 			    </p> 
 		    </td>
-			
-		    <br>
-			<table align=center width=900px>
-			 <tr>
-                <td colspan='2'>
-                   <center>
-                        <img src = "./360.gif" width="450px" height="253px"></img>
-                    </center>     
-	        </td>
-                <td colspan='2'>
-                    <center>
-			    <img src = "./MPS_Net_DM3-choice_output.gif" width="450px" height="127px"></img>
-			</center>
-<center>
-                        <a href="./MPS_Net_201911_output.mp4">
-                            <video width="450" controls preload>
-                                <source src="./MPS_Net_201911_output.mp4" type="video/mp4">
-                            </video>
-                        </a>
-                    </center>
-		</td><br>
+		</tr>
+	    </table>
+	    <br>
+	    <table align=center width=900px>
+		<tr>
+                	<td colspan='2'>
+                   		<center>
+                        		<img src = "./360.gif" width="450px" height="253px"></img>
+                    		</center>     
+	        	</td>
+                	<td colspan='2'>
+                    		<center>
+			    		<img src = "./MPS_Net_DM3-choice_output.gif" width="450px" height="127px"></img>
+				</center>
+				<center>
+                        		<a href="./MPS_Net_201911_output.mp4">
+                            			<video width="450" controls preload>
+                                			<source src="./MPS_Net_201911_output.mp4" type="video/mp4">
+                            			</video>
+                        		</a>
+                    		</center>
+			</td>
+			<br>
 
-                      <center>
-				 <span style="font-size:14px">   Left: The video shows the 3D human pose and shape estimation results of our MPS-Net from different viewpoints. Top-Right: Visual results of the continuity of human motion learned by MPS-Net (MPS-Net produces a transition effect between pose exchanges). Bottom-Right: Visualization of a standing still person by MPS-Net. When the input video content is a person standing still, MPS-Net does not force the subject to be in motion. </span>
-  </center>
-		<br> 
-	      </tr>
-            </table>
-<br> <br>   
-<hr>
+                      	<center>
+				<span style="font-size:14px">   Left: The video shows the 3D human pose and shape estimation results of our MPS-Net from different viewpoints. Top-Right: Visual results of the continuity of human motion learned by MPS-Net (MPS-Net produces a transition effect between pose exchanges). Bottom-Right: Visualization of a standing still person by MPS-Net. When the input video content is a person standing still, MPS-Net does not force the subject to be in motion. </span>
+ 			</center>
+			<br> 
+	      	</tr>
+           </table>
+	   <br><br>   
+	<hr>
             <table align=center width=700>
              <center><h1>Paper</h1></center>
                 <tr>
